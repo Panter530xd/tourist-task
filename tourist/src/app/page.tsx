@@ -34,11 +34,11 @@ export default function Home() {
   };
 
   return (
-    <main className="max-w-screen-2xl mx-auto lg:w-[95%] w-11/12 py-6 flex-col gap-4">
+    <main className="max-w-screen-2xl mx-auto lg:w-[95%] w-11/12 py-8 flex-col gap-4">
       <div className="flex justify-center pb-10">
         <CustomInput />
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 pb-10">
         <div className="w-1/4 p-4">
           <CheckboxFilter />
         </div>
@@ -62,13 +62,14 @@ export default function Home() {
               <CardComponent key={index} {...cardData} />
             ))}
           </div>
-
-          <PaginationControls
-            totalPages={totalPages}
-            currentPage={currentPage}
-            onPageChange={handlePageChange}
-          />
         </div>
+      </div>
+      <div className="pb-20">
+        <PaginationControls
+          totalPages={totalPages}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
       </div>
     </main>
   );
