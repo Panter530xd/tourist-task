@@ -64,7 +64,7 @@ const CardComponent: React.FC<CardProps> = ({
               <Image src={ShowOnTheMap} alt="Map Icon" className="w-6 h-6" />
             </Link>
           </div>
-          <p className="mb-4">{location}</p>
+          <p className="mb-6">{location}</p>
           <p className="mb-4 w-2/3">{description}</p>
           <div className="flex items-center mb-4 gap-2">
             <div className="flex gap-1">
