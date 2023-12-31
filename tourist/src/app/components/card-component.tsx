@@ -52,7 +52,7 @@ const CardComponent: React.FC<CardProps> = ({
         </div>
 
         <div className="p-6">
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center">
             <Link
               className="text-2xl font-semibold text-gray-800 mb-2"
               href={"/"}
@@ -64,7 +64,7 @@ const CardComponent: React.FC<CardProps> = ({
               <Image src={ShowOnTheMap} alt="Map Icon" className="w-6 h-6" />
             </Link>
           </div>
-          <p className="text-sm mb-4">{location}</p>
+          <p className="mb-4">{location}</p>
           <p className="mb-4 w-2/3">{description}</p>
           <div className="flex items-center mb-4 gap-2">
             <div className="flex gap-1">
