@@ -7,6 +7,7 @@ import CustomInput from "./components/custom-input";
 import rectangleImage from "../../public/photos/images/Rectangle 63.png";
 import MapImage from "../../public/photos/images/Mapsicle Map.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const PAGE_SIZE = 6;
 
@@ -48,7 +49,9 @@ export default function Home() {
               <Image src={MapImage} width={300} height={150} alt={"Map"} />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-white p-2">
-                  <p className="text-center">Vezi pe hartă</p>
+                  <Link className="text-center" href={"/"}>
+                    Vezi pe hartă
+                  </Link>
                 </div>
               </div>
             </div>

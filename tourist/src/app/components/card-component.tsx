@@ -40,7 +40,7 @@ const CardComponent: React.FC<CardProps> = ({
             objectFit="cover"
             className="rounded-lg filter brightness-100"
           />
-          <div className="absolute top-4 right-4 p-2 bg-[#4D4D4D] rounded-full">
+          <div className="absolute top-4 right-4 p-2 bg-[#4D4D4D] rounded-full cursor-pointer">
             <Image
               src={favoriteIcon}
               width={20}
@@ -53,9 +53,12 @@ const CardComponent: React.FC<CardProps> = ({
 
         <div className="p-6">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <Link
+              className="text-2xl font-semibold text-gray-800 mb-2"
+              href={"/"}
+            >
               {title}
-            </h2>
+            </Link>
             <Link href={"/"} className="flex gap-2 items-center">
               <p className="text-[#6C759D]">{showOnMap}</p>
               <Image src={ShowOnTheMap} alt="Map Icon" className="w-6 h-6" />
