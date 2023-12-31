@@ -88,7 +88,7 @@ const Pagination: React.FC<{
       buttons.push(
         <span
           key={"ellipsis-before-pages"}
-          className="mx-1 px-3 py-1 text-[#AFAFAF] font-bold text-xl"
+          className="mx-1 px-3 py-1 text-black font-bold text-xl"
         >
           ...
         </span>
@@ -119,7 +119,7 @@ const Pagination: React.FC<{
       buttons.push(
         <span
           key={"ellipsis-after-pages"}
-          className="mx-1 px-3 py-1 text-[#AFAFAF] font-bold text-xl"
+          className="mx-1 px-3 py-1 text-black font-bold text-xl"
         >
           ...
         </span>

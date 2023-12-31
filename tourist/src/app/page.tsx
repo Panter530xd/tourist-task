@@ -48,7 +48,7 @@ export default function Home() {
             <div className="relative">
               <Image src={MapImage} width={300} height={150} alt={"Map"} />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="bg-white p-2">
+                <div className="bg-white p-2 rounded-lg">
                   <Link className="text-center" href={"/"}>
                     Vezi pe hartă
                   </Link>
